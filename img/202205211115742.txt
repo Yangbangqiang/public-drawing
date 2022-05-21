@@ -1,0 +1,87 @@
+
+1. oss 文件 md5 需要修改；
+2. 数据库模型表，model_name 值处理，full_name
+3. 支付  0 元 特殊处理；
+4. 插件分配，已过期套餐，还存在，能进行分配，其实已经无意义。
+
+
+
+
+
+1. 回收站 设计优化，涉及使用量统计、套餐空间、业务数据处理、索引；
+2. 注解 拦截  @MessageNotify    事务一致性问题（前置
+3. 转存文件累加 表锁死；
+4. 转换计列表
+5. 视频播放 转码
+
+
+alter user 'pm-dev-user'@'%' identified by 'CzlK3LGDWMm8QaYf';
+alter user 'pan-dev-user'@'%' identified by 'mXkNRUOu6W7imkEL';
+alter user 'ldap_dev_user'@'%' identified by '7di2U10EZT52whu3';
+alter user 'bimfor-dev-user'@'%' identified by 'FYdW5tZssLuDjpmz';
+alter user 'www-dev-user'@'%' identified by 'Hb4F4CBY6y1D1AUI';
+
+flush privileges;
+
+
+alter user 'pan-test-user'@'%' identified by 'igNRws3nehH9kLpx';
+alter user 'www-test-user'@'%' identified by 'wMw0b415uX1qqH96';
+alter user 'pm-test-user'@'%' identified by '6MP003bzUmqEzI0l';
+alter user 'bimfor-test-user'@'%' identified by 'NdLDmWBgD17hyukxCxLhNeIvt';
+
+1. 系统套餐 购买 插件拆分；
+2. 插件套餐 购买 插件拆分；
+3. 内测、试用  插件拆分；
+4. 团队套餐分配 插件拆分；
+5. 新注册企业 免费套餐 插件拆分；
+6. 历史插件明细 初始化；
+7. 新插件面板列表数据，授权；
+
+
+
+
+attachment;filename=%E5%B7%A5%E4%BD%9C%E4%BA%A4%E6%8E%A5%E7%9B%B8%E5%85%B3%E6%96%87%E6%A1%A3.zip
+
+ssh -CfNT -o ServerAliveInterval=10 -o ServerAliveCountMax=3 -L 25672:127.00.0.1:15672 yangbq@39.101.196.65
+
+
+
+
+1. 判断日期 是否大于30 天  小于75
+   离30 天剩余多少天
+   
+2. 小于 30 天  大于等于 20
+  
+3. 小于 20 天  大于等于 10
+
+3. 小于 10 天  大于等于 5
+
+4. 小于 5 天  大于等于 1
+
+链接：http://share.bimfor.dev.bjocd.com/2701c8fa749f2df837923e351a6acddd
+提取码：A7dw4A
+
+hr-model
+
+
+1F 1393160896454504450   76bca1ad572c8de5063d546d4c9028f3    -> 8f8d20d2a0140aa6d6f3d2b8f7172780
+4F 1394119354725212161  1394119354725212162   cd7d4dabbef2caac698c71e6c97714d6    -> 
+2F 1394466148046905345   a9244e03dbb1831ed54185cafc11c54c 失败   ->   https://pm-prod.oss-cn-shenzhen.aliyuncs.com/project/process/results/model/e591d3d4dc4ead47fbd8c96db8e26d19.skp
+3F 1394126007000408066   7bf9cf159b735b58596487708b571ae2    https://pm-prod.oss-cn-shenzhen.aliyuncs.com/project/process/results/model/50458a5e45d2144d7c4a328448cf4e98.skp
+
+5F 1394133711353847810   f3aa439e424e26bf05a571aa5428d800    https://pm-prod.oss-cn-shenzhen.aliyuncs.com/project/process/results/model/0058f10cf9040f41c7f8588f1e8db901.skp
+6F 1394135244099330049 50  91b88e01b0f7d4fccf7f2a7ebc0e00a1    https://pm-prod.oss-cn-shenzhen.aliyuncs.com/project/process/results/model/550ceca9983d594a0d983f796fb470bf.skp
+7F 1394463431995990017   4c249fa4b152bc01599cb8b7dd585d75   https://pm-prod.oss-cn-shenzhen.aliyuncs.com/project/process/results/model/5791eecf915bf9426c994f09c67d0faf.skp
+8F 1394129851776278530   7f4640890fdeea4aed1a7d1e93803fd0   https://pm-prod.oss-cn-shenzhen.aliyuncs.com/project/process/results/model/57e927c456350545b55a4025760fe324.skp
+LG 1397832407522254850   97546dab1f5c2f6d5a4654067abf54ff   https://pm-prod.oss-cn-shenzhen.aliyuncs.com/project/process/results/model/cbf0c4108c91e84bb58bbc28194dd7e8.skp
+
+
+
+
+
+
+1. 部门扩展码；
+2. 通讯录  共享
+3. 人员部门多选
+4. 已发信息   当前人发的信息
+5. 上行信息  只显示部门信息
